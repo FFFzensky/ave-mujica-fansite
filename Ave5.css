@@ -1,0 +1,215 @@
+@import url("Ave4.css");
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000000 url('Logo.jpg') no-repeat center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #000000;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2em;
+    margin: 0;
+}
+
+header nav {
+    color: #e20068;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    margin-right: 20px;
+    color: #e20068;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #e20068;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.bio p {
+    line-height: 1.5;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+}
+
+.bio-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.bio-text {
+    flex: 1;
+    padding-right: 5px;
+}
+
+.bio-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-image img {
+    max-width: 60%;
+    height: auto;
+}
+
+.chatbox {
+    background-color: #f9f9f9;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+  }
+  .chatbox input[type="text"], .chatbox textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  .chatbox input[type="submit"] {
+    background-color: #e20068;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .chatbox input[type="submit"]:hover {
+    background-color: #e20068;
+  }
+
+  .display-comments {
+    background-color: #e20068;
+    color: black; 
+    padding: 10px; 
+    border-radius: 5px; 
+  }
+  
+  .display-comments h2 {
+    margin: 0; 
+  }
+  
+  .display-comments button {
+    background-color: #E0E0E0;
+    color: black; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+  }
+  
+  #comments-container {
+    display: block;
+    margin-top: 10px; 
+  }
+  
+  #comments-container.hidden {
+    display: none;
+  }
+
+  footer {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 img {
+        height: 150px;
+        width: 150px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .bio,
+    .musik,
+    .galeri,
+    .personil,
+    .Konser,
+    .Komentar,
+    .display-comments {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-grid img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .bio-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Konser {
+        text-align: center;
+        background: #e20068;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .Konser img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .main-container,
+    .logout-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logout-container button {
+        background-color: #e20068;
+        color: #000000;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 0px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
